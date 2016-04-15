@@ -1,0 +1,45 @@
+<html>
+	<head>
+	
+	
+		 
+		
+	</head>
+	<body>
+	
+			<form>
+				Your name: 
+			</form>
+		<input type='text' id='name' name='yourname' >
+		<input type='button' value='send' id='send' style='width:80px;height:30px;'>
+			
+		<div id='p1' style='display:none' >我知道你顆顆顆</div>
+		<div id='p2' style='display:none' >Who are you!?</div>
+		
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+			 $('#send').click(function(){
+				var x=$('#name').val();
+				console.log(x);
+			  if (x=='史蕓瑄')
+			  {$('#p1').show();
+			  
+			  }
+			else if (x=='吳哲銘')
+			{$('#p1').show();
+			  
+			  }
+			else if (x=='郭子瑋')
+			   {$('#p1').show();
+			  
+			  }
+			else
+			   {$('#p2').show();
+			  
+			  }
+			});
+		</script>
+	</body>
+
+
+</html>
